@@ -36,7 +36,7 @@ jobs:
         run: |
           git config --global user.name "Asim Dipto"
           git config --global user.email "asimdipto@github.com"
-          git add "RoarZone-Playlist.m3u"
+          git add "RoarZone.m3u"
           if git diff --staged --quiet; then
             echo "Nothing to push."
           else
@@ -46,7 +46,7 @@ jobs:
           fi
 
       - name: Instant Loop
-        # ১ মিনিট বিরতি দিয়ে আবার রান হবে
+
         run: |
           sleep 60
           curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
