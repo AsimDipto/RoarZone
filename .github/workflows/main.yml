@@ -1,8 +1,8 @@
-name: BDIX Auto Update
+name: RoarZone Auto Update
 
 on:
   schedule:
-    - cron: '0,30 * * * *'
+    - cron: '*/30 * * * *'
   workflow_dispatch:
 
 permissions:
