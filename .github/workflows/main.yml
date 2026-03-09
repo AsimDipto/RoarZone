@@ -2,7 +2,7 @@ name: Run Python Script
 
 on:
   schedule:
-    # Pattern 1: Run at minute 0 and 40 during even hours
+    
     - cron: "0,40 0-23/2 * * *"
     # Pattern 2: Run at minute 20 during odd hours
     - cron: "20 1-23/2 * * *"
