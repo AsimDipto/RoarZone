@@ -2,7 +2,7 @@ name: RoarZone Auto Update
 
 on:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: 
   workflow_dispatch:
 
 permissions:
